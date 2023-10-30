@@ -3,11 +3,11 @@ package chapter17;
 import java.util.concurrent.Flow.Subscriber;
 import java.util.concurrent.Flow.Subscription;
 
-public class TempSubscription implements Subscription {
+public class TempBasicSubscription implements Subscription {
     private final Subscriber<? super TempInfo> subscriber;
     private final String town;
 
-    public TempSubscription(Subscriber<? super TempInfo> subscriber, String town) {
+    public TempBasicSubscription(Subscriber<? super TempInfo> subscriber, String town) {
         this.subscriber = subscriber;
         this.town = town;
     }
